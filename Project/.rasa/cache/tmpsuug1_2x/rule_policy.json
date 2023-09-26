@@ -1,0 +1,56 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_food\"}}]": "validate_form_get_food",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_food\"}}, {\"active_loop\": {\"name\": \"validate_form_get_food\"}, \"prev_action\": {\"action_name\": \"validate_form_get_food\"}, \"user\": {\"intent\": \"get_food\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_age\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_allergen\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_food\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_allergen\"}}]": "validate_form_get_allergen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_allergen\"}}, {\"active_loop\": {\"name\": \"validate_form_get_allergen\"}, \"prev_action\": {\"action_name\": \"validate_form_get_allergen\"}, \"user\": {\"intent\": \"get_allergen\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_gender\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_age\"}}]": "validate_form_get_age",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_age\"}}, {\"active_loop\": {\"name\": \"validate_form_get_age\"}, \"prev_action\": {\"action_name\": \"validate_form_get_age\"}, \"user\": {\"intent\": \"get_age\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_gender\"}}]": "validate_form_get_gender",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_gender\"}}, {\"active_loop\": {\"name\": \"validate_form_get_gender\"}, \"prev_action\": {\"action_name\": \"validate_form_get_gender\"}, \"user\": {\"intent\": \"get_gender\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [
+      "validate_form_get_age",
+      "validate_form_get_gender",
+      "validate_form_get_allergen",
+      "validate_form_get_food"
+    ],
+    "rules_for_loop_unhappy_path": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"validate_form_get_food\"}, \"prev_action\": {\"action_name\": \"validate_form_get_food\"}, \"user\": {\"intent\": \"get_food\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"validate_form_get_allergen\"}, \"prev_action\": {\"action_name\": \"validate_form_get_allergen\"}, \"user\": {\"intent\": \"get_allergen\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"validate_form_get_age\"}, \"prev_action\": {\"action_name\": \"validate_form_get_age\"}, \"user\": {\"intent\": \"get_age\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"validate_form_get_gender\"}, \"prev_action\": {\"action_name\": \"validate_form_get_gender\"}, \"user\": {\"intent\": \"get_gender\"}}]": "do_not_predict_loop_action"
+    },
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_food\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_allergen\"}}]",
+      "handling active loops and forms - form_get_age",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_gender\"}}]",
+      "handling active loops and forms - form_get_gender - action_listen",
+      "handling active loops and forms - validate_form_get_age - action_listen",
+      "handling active loops and forms - form_get_food - action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_age\"}}]",
+      "handling active loops and forms - form_get_allergen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_age\"}}]",
+      "handling active loops and forms - form_get_age - action_listen",
+      "handling active loops and forms - validate_form_get_food - action_listen",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_gender\"}}]",
+      "handling active loops and forms - validate_form_get_allergen - action_listen",
+      "predicting default action with intent back",
+      "predicting default action with intent restart",
+      "handling active loops and forms - form_get_gender",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_food\"}}]",
+      "handling active loops and forms - form_get_allergen - action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"get_allergen\"}}]",
+      "handling active loops and forms - form_get_food",
+      "handling active loops and forms - validate_form_get_gender - action_listen"
+    ]
+  }
+}

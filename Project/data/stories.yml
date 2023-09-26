@@ -1,0 +1,16 @@
+# This file defines the stories for the Rasa chatbot.
+
+# Define the Rasa Core version.
+version: "3.1"
+
+# The 'stories' section contains a list of user-bot interaction sequences that the bot is trained on.
+stories:
+# Each story will be a sequence of user messages and corresponding bot actions.
+# An example structure of a story:
+# - story: name of the story for reference
+#   steps:
+#   - intent: user_intent_1
+#   - action: bot_action_1
+#   - intent: user_intent_2
+#   - action: bot_action_2
+#   ... and so on

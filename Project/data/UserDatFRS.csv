@@ -1,0 +1,87 @@
+uuid,weight,age,gender,sports,height,habits,mealtype,disliked_ingredients,allergies,bmr,recipe_id
+2c585453-5ab6-49db-94aa-6c66641f6087,56,22,female,active,160,halal,lunch,coca,gluten,1365.845,222655
+3f96d29e-4dcf-41c1-ad7e-3adc1da1b212,56,22,female,active,160,halal,lunch,milk,gluten,1365.845,222655
+52ec660f-95aa-4bb8-bcd1-845e436faefc,58,24,female,active,165,vegan,dinner,liver,dairy,1391.169,219118
+7e9d3b36-7be9-47c7-aa2e-546f6fe8d220,58,28,female,active,158,kosher,lunch,wine,dairy,1352.163,219118
+9307d5d6-6524-4749-82bf-61c0a313bb49,82,22,male,highly active,178,halal,lunch,karantita,dairy,1916.2440000000004,213461
+0cb21a0f-4029-4232-b007-bd370524faca,90,47,male,sedentary,180,vegan,lunch,bread,gluten,1891.0930000000003,31870
+dde73eb5-6ed8-44f9-8752-de8c1eeab002,50,50,male,active,190,halal,lunch,cookie,dairy,1386.172,219118
+ba67a563-2c3a-4992-a831-49f102cd4d4f,50,50,female,active,180,halal,lunch,milk,gluten,1251.083,222655
+58f584a5-f8d8-4971-acb2-908655cce55f,45,14,female,sedentary,160,vegan,lunch,cola,dairy,1298.768,125366
+46a9cc4e-7e77-4871-894c-6ae7ba70b1c9,82,22,male,active,178,vegan,lunch,sugar,dairy,1916.2440000000004,213461
+82c51702-28a9-4264-8ed1-0d7860adf36d,70,57,male,sedentary,175,vegetarian,lunch,eggs,gluten,1542.388,233874
+5fc33f1f-ad46-4c22-8b22-4fed30c7dc96,79,50,male,active,160,kosher,lunch,chocolate,gluten,1630.715,213461
+c234c46b-dd28-4b22-875e-f0c28f594fd1,48,19,female,sedentary,164,halal,dinner,sugar,dairy,1317.2510000000002,125366
+0a11513a-7a50-4f22-9e56-0e4238969a83,80,22,male,sedentary,162,vegan,lunch,sugar,dairy,1812.666,53796
+4797b45b-affd-4bc9-826f-7eea6af8940c,85,50,male,active,191,halal,dinner,sugar,dairy,1859.8660000000004,213461
+48a0a0fb-5534-4242-b5de-17f4ff87e15d,53,22,female,active,165,vegan,lunch,sugar,gluten,1353.5939999999998,222655
+fb990cfd-7a10-49e4-9fc1-f319c7a40d4d,50,50,female,active,172,vegan,dinnner,milk,dairy,1226.299,23157
+6434f0e6-283b-4cd3-a7e7-566e60a18493,52,25,female,active,164,vegetarian,dinner,sugar,dairy,1328.259,219118
+5dc4fe98-96de-4748-a5ed-1fb1beb3de77,120,120,male,active,190,halal,dinner,milk,dairy,1926.5720000000003,213461
+281f1d87-e04a-41d9-a57c-a99f210f975b,60,120,female,active,150,kosher,lunch,sugar,dairy,947.513,229664
+b6581710-3702-4023-b74c-b910b8906b36,20,4,female,active,100,halal,dinner,milk,gluten,925.013,229664
+47c554d1-97ee-47d1-bc4e-4b321008e38f,2,0,male,active,60,kosher,lunch,milk,dairy,403.096,246715
+2e477ff8-6c2f-4d41-84a9-3f58f127337e,2,0,male,active,60,kosher,dinner,milk,dairy,403.096,246715
+72b08f33-f399-4526-873f-8767e990618f,3,1,female,sedentary,45,halal,lunch,milk,gluten,610.414,244856
+15a55f81-043b-4818-8f9a-dc394d282f9e,0,0,female,active,0,halal,dinner,milk,dairy,447.593,229350
+9d752d29-f3b3-4088-9f1c-f893f7727e2b,2,0,female,active,1,vegan,dinner,milk,gluten,469.185,229350
+6ffb389d-7007-44d6-8bc8-ff0069ce019e,56,22,female,active,150,halal,lunch,sugar,dairy,1334.865,219118
+82086553-6c2a-4dd3-baf7-444228d40f68,56,23,male,sedentary,200,vegan,lunch,rabbit,milk,1667.823,233874
+f7f02e07-a1c2-47f6-9684-b972e01d9993,57,22,female,sedentary,158,halal,dinner,sugar,dairy,1368.896,215053
+de0323f5-c5b1-497c-b332-7f9ecc62f563,85,22,male,highly active,178,halal,lunch,eggs,gluten,1956.435,213461
+69e9122a-8c99-45be-a4a8-c6e9c5ae2560,85,22,male,active,178,kosher,lunch,milk,dairy,1956.435,213461
+cd6ef155-d808-451d-88fe-12a1dad908c1,86,22,male,active,180,kosher,lunch,milk,gluten,1979.43,218140
+38cb655c-f332-45dc-9f40-a6b7974da302,56,22,female,sedentary,180,kosher,lunch,milk,dairy,1427.805,12414
+a85472d0-5a45-4632-ae7e-e3d30645bb6c,86,22,male,active,178,vegan,dinner,milk,dairy,1969.832,213461
+445895e9-30cf-4630-860f-646ae480617d,60,22,female,active,160,halal,lunch,milk,gluten,1402.833,222655
+a311998e-e5d8-428e-933e-96715ba60c8e,85,23,male,active,178,vegan,lunch,milk,dairy,1950.7580000000005,213461
+7d6a00a4-4ca8-49a7-a7f4-ab9196a2d886,120,22,female,active,200,vegan,lunch,milk,dairy,2081.573,213461
+ce57a898-f347-4109-a551-48e3f856f11e,56,22,male,active,182,halal,dinner,milk,dairy,1587.1180000000002,213461
+80caed6c-8f35-44e5-81ef-93a23eedcdd7,86,22,male,highly active,178,vegan,dinner,milk,dairy,1969.832,219611
+644790b7-e4ba-4a62-a558-5516ffe55f43,102,22,male,active,200,vegan,dinner,milk,dairy,2289.762,219611
+1ac4e6a0-261d-4c1d-be70-2b157d4e83f0,56,22,female,active,160,vegan,dinner,milk,dairy,1365.845,219118
+14cb8d6e-9e1a-4410-bc29-716e1ce31ac2,56,22,female,active,165,vegan,lunch,milk,dairy,1381.3349999999998,219118
+7097bd8a-bf68-435e-bfb0-6227375201e6,56,22,female,active,180,vegan,dinner,milk,dairy,1427.805,219118
+c4e491f0-bc87-4e44-b3cb-8ccf295b2877,82,22,male,active,178,halal,lunch,eggs,dairy,1916.2440000000004,213461
+48766c3d-5049-43dc-b117-563a791628e7,56,52,female,sedentary,156,halal,lunch,sugar,dairy,1223.553,125366
+780b2ee4-c02c-48b1-a3b0-11334af5383b,70,22,male,active,180,halal,lunch,milk,gluten,1765.0780000000002,218140
+83cdcdb3-64be-4233-8bc6-e0c980790e1b,56,22,female,active,160,vegan,lunch,milk,gluten,1365.845,222655
+9ee0465a-fe37-4818-9cf4-cfaa0aca8fae,56,22,female,active,160,vegan,dinner,milk,dairy,1365.845,219118
+6fa68542-ab43-4ee6-94cd-1d7624e7005f,56,22,male,active,168,halal,lunch,milk,dairy,1519.932,213461
+d8373fa6-6546-42e1-bdb0-00aa3125ec98,2,22,female,active,0,vegan,dinner,milk,dairy,370.827,246715
+26a0c80b-3e65-48a6-8452-65bc256c496c,56,22,female,active,160,vegan,dinner,milk,dairy,1365.845,219118
+687f95f9-e12c-4522-b2dd-48e03f84e2b2,2,22,female,active,0,halal,lunch,milk,dairy,370.827,246715
+cee56305-fc93-4703-8ef5-260b543d2016,82,22,male,highly active,178,halal,dinner,milk,dairy,1916.2440000000004,213461
+e5cc1385-b085-444e-87da-f311e8bdcdb0,4,1,female,active,1,halal,dinner,milk,dairy,483.3490000000001,47872
+1c72021e-1b4c-440a-a812-1cf4fe21b03f,0,2,female,active,0,halal,lunch,milk,dairy,438.933,246715
+bfa3c92e-fa1e-41ac-b4b8-46b79cf51525,120,22,female,active,258,halal,dinner,milk,dairy,2261.257,219611
+0394cb2f-00e0-4bf4-ba56-a862b29a7a74,56,22,female,active,160,halal,lunch,eggs,gluten,1365.845,222655
+95527a70-45b2-45e0-b019-3251ecfcecd7,56,22,female,active,160,halal,lunch,milk,dairy,1365.845,219118
+1e5766d1-3546-4618-83db-985bf5361dd6,56,22,female,highly active,160,vegan,lunch,milk,dairy,1365.845,213461
+c15c98f1-2aeb-4ebb-a740-0abe90acba1b,86,22,male,highly active,178,halal,lunch,milk,dairy,1969.832,219611
+3841bf1e-ad68-43b9-8c8b-bd846153e24c,56,22,female,highly active,160,halal,lunch,eggs,dairy,1365.845,213461
+31c3b2ed-acc2-4ef8-b30b-bc59c0083a6b,50,22,female,highly active,160,halal,dinner,eggs,dairy,1310.363,219118
+b166ac9a-e00e-4c5b-8d8a-72d370b55b65,53,22,female,active,160,"['halal', 'vegan']",dinner,milk,dairy,1338.104,219118
+e241426d-0850-4265-91ff-1e96a710f12e,53,22,female,active,160,['halal'],lunch,"milk,  eggs","gluten, dairy, peanut, shellfish",1338.104,219118
+9b95c5a8-2a66-48fe-8b1c-ac250da55669,53,22,female,active,160,['halal'],lunch,milk,peanut,1338.104,222655
+80a2f434-f509-45f0-b85d-4de55d7c483d,56,22,female,active,160,['halal'],dinner,milk,dairy,1365.845,219118
+0c3ab1bd-41b4-4513-ab9d-4d944597a6ed,52,22,female,active,16,['vegan'],lunch,milk,dairy,882.745,229664
+e34f18b9-ed21-4589-881c-91056098bff6,53,22,female,active,160,['halal'],dinner,milk,peanut,1338.104,222655
+6c7c4ae1-8300-4720-bb24-7401588da839,56,22,female,active,160,['halal'],lunch,milk,gluten,1365.845,222655
+c87164ba-72a9-4b9d-a762-b64efd124572,53,22,female,active,160,['halal'],lunch,fries,gluten,1338.104,222655
+74bd8b43-ddcc-4fb6-8273-898bfddfcb37,53,22,female,active,160,['halal'],lunch,milk,dairy,1338.104,219118
+211498c1-f174-49ff-8d4d-8f2b8941bbee,56,22,female,active,160,['halal'],lunch,milk,gluten,1365.845,222655
+48c46e23-e247-4681-b8b1-819228a4afef,53,22,female,active,160,['vegan'],dinner,milk,gluten,1338.104,222655
+6ae8a0f9-349c-40e7-a8fc-cf8cb28105c3,53,22,female,active,160,['vegan'],lunch,milk,gluten,1338.104,222655
+c80fbd17-c578-4ccd-88d3-fac6f665c09f,52,22,female,active,160,['halal'],dinner,milk,gluten,1328.857,222655
+1d360591-4368-4e04-b389-7377f725a8ae,53,22,female,active,160,['halal'],dinner,milk,gluten,1338.104,222655
+d0cf5e8b-6023-4690-b80b-3c7b4498e940,52,22,female,active,160,['vegan'],dinner,milk,dairy,1328.857,219118
+90e76bd8-cc3d-4f69-9133-3310312f13eb,86,58,male,highly active,198,['halal'],lunch,merguez,dairy,1861.44,213461
+17021c38-db56-4028-80e8-4d1ddca7ff54,100,35,male,active,190,['halal'],dinner,goat,gluten,2141.177,218140
+505dd311-5af9-4dc1-aecf-3062b80673be,82,22,male,active,178,['halal'],dinner,milk,dairy,1916.2440000000004,213461
+2443cc42-1d94-4555-9823-a9e82f4c18b1,56,22,male,active,174,['halal'],dinner,milk,dairy,1548.726,213461
+53fb3923-569d-49c1-862c-51c4670d9fc6,56,22,female,active,160,['vegan'],lunch,milk,dairy,1365.845,219118
+1a4bbcdb-1b73-467a-907c-a3887c8fcff2,53,52,male,active,185,['vegan'],dinner,milk,dairy,1391.014,219118
+91bc3fe5-0eb8-44fb-9393-1c130fae6c1b,58,22,female,active,18,['vegan'],dinner,rice,dairy,944.423,229664
+e0e44938-58fe-423b-a981-4243223e5f98,56,22,female,active,180,['kosher'],dinner,rice,dairy,1427.805,219118
+646004db-6cf1-478c-a030-f42632b816f3,56,22,male,active,160,['halal'],lunch,milk,dairy,1481.54,219118

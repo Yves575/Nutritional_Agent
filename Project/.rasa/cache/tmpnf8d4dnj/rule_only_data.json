@@ -1,0 +1,9 @@
+{
+  "rule_only_slots": [],
+  "rule_only_loops": [
+    "validate_form_get_age",
+    "validate_form_get_gender",
+    "validate_form_get_food",
+    "validate_form_get_allergen"
+  ]
+}

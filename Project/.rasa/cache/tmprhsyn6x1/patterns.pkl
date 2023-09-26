@@ -1,0 +1,34 @@
+[
+  {
+    "name": "height",
+    "pattern": "(\\b1\\.90\\b|\\b1\\.70\\b|\\b1\\.65\\b|\\b1,80\\b)"
+  },
+  {
+    "name": "weight",
+    "pattern": "(\\b50\\b|\\b82\\b|\\b95\\b|\\b120\\b)"
+  },
+  {
+    "name": "age",
+    "pattern": "(\\b32\\b|\\b46\\b|\\b50\\b|\\b21\\b)"
+  },
+  {
+    "name": "gender",
+    "pattern": "(\\bguy\\b|\\bgirl\\b|\\bmale\\b|\\bfemale\\b|\\bboy\\b|\\blady\\b|\\bman\\b|\\bwoman\\b|\\bgentleman\\b|\\bmadam\\b|\\bnon\\-binary\\b|\\btrans\\ male\\b|\\btrans\\ female\\b|\\bgenderqueer\\b|\\bgenderfluid\\b|\\bcisgender\\ male\\b|\\bcisgender\\ female\\b|\\btwo\\-spirit\\b|\\bagender\\b)"
+  },
+  {
+    "name": "sport",
+    "pattern": "(\\bvery\\ active\\b|\\bhighly\\ active\\b|\\bnot\\ active\\b|\\bfairly\\ active\\b|\\blightly\\ active\\b)"
+  },
+  {
+    "name": "habits",
+    "pattern": "(\\bhalal\\b|\\bMediterranean\\b|\\blow\\-carb\\b|\\bhigh\\-protein\\b|\\bvegan\\b|\\bvegetarian\\b|\\bpaleo\\b|\\bketo\\b|\\bgluten\\-free\\b|\\bdairy\\-free\\b|\\bpescatarian\\b|\\bAtkins\\b|\\bSouth\\ Beach\\b|\\braw\\ food\\b|\\borganic\\b|\\bWhole30\\b|\\bsugar\\-free\\b|\\bflexitarian\\b|\\bplant\\-based\\b|\\bkosher\\b)"
+  },
+  {
+    "name": "disliked",
+    "pattern": "(\\btomatoes\\b|\\banise\\b|\\bsour\\ flavors\\b|\\beggplant\\b|\\bonions\\b|\\bgarlic\\b|\\bmustard\\b|\\bturnips\\b|\\bbell\\ peppers\\b|\\bparsley\\b|\\bcilantro\\b|\\brhubarb\\b|\\banchovies\\b|\\bsardines\\b|\\bclams\\b|\\boysters\\b|\\bblue\\ cheese\\b|\\bgoat\\ cheese\\b|\\bpickles\\b|\\bradishes\\b|\\bbeets\\b|\\bbrussels\\ sprouts\\b|\\bcabbage\\b|\\bmushrooms\\b|\\bspinach\\b|\\bbitter\\ tastes\\b|\\bspicy\\ food\\b|\\bbroccoli\\b|\\bcauliflower\\b|\\bkale\\b|\\bliver\\b|\\bsnails\\ \\(escargot\\)\\b|\\btofu\\b|\\bquinoa\\b|\\bseaweed\\b|\\blicorice\\b|\\bhorseradish\\b|\\basparagus\\b|\\bsauerkraut\\b|\\blamb\\b|\\bvenison\\b|\\bcaviar\\b|\\bduck\\b|\\bokra\\b|\\bartichokes\\b)"
+  },
+  {
+    "name": "allergen",
+    "pattern": "(\\bBrussels\\ Sprouts\\b|\\bLiver\\b|\\bAnchovies\\b|\\bOlives\\b|\\bBlue\\ Cheese\\b|\\bOkra\\b|\\bBeets\\b|\\bTofu\\b|\\bCilantro\\b|\\bOysters\\b|\\bDurian\\b|\\bTripe\\b|\\bKale\\b|\\bEggplant\\b|\\bSardines\\b|\\bSauerkraut\\b|\\bLicorice\\b|\\bMarmite\\b|\\bVegemite\\b|\\bArtichokes\\b|\\bLima\\ Beans\\b|\\bCottage\\ Cheese\\b|\\bGrapefruit\\b|\\bFennel\\b|\\bSeaweed\\b|\\bEscargot\\b|\\bPickles\\b|\\bMustard\\b|\\bWasabi\\b|\\bHorseradish\\b|\\bCapers\\b|\\bMayonnaise\\b|\\bVinegar\\b|\\bKetchup\\b|\\bHot\\ Sauce\\b|\\bGarlic\\b|\\bOnions\\b|\\bSpinach\\b|\\bMushrooms\\b|\\begg\\b)"
+  }
+]

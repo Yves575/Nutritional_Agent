@@ -1,0 +1,57 @@
+# This file defines the rules for the chatbot's conversation logic.
+
+# Define the Rasa Core version.
+version: "3.1"
+
+# The 'rules' section contains a list of rules that guide the chatbot's behavior in certain scenarios.
+
+rules:
+  # This rule defines the bot's behavior when the user wants to exit.
+  - rule: exit the program
+    steps:
+    - intent: exit
+    - action: utter_exit  # The bot will respond with the 'utter_exit' response.
+    
+  # This rule defines the bot's behavior when the user wants to create a recipe.
+  - rule: Create recipe
+    steps:
+    - intent: create_recipe
+    - action: utter_create_recipe  # The bot will respond with the 'utter_create_recipe' response.
+
+  # This rule activates the 'simple_form' when the user greets the bot.
+  - rule: activate form rules
+    steps:
+    - intent: greet
+    - action: simple_form
+    - active_loop: simple_form  # This starts the 'simple_form' loop.
+
+  # This rule defines what happens once the 'simple_form' is completed.
+  - rule: submit form
+    condition:
+      - active_loop: simple_form
+    steps:
+    - action: simple_form
+    - active_loop: null  # Ends the active loop.
+    - slot_was_set:
+      - requested_slot: null  # Resets the requested slot.
+    - action: action_say_data  # After the form is submitted, the bot performs the 'action_say_data' action.
+
+  # This rule defines the bot's behavior when the user asks for help while the 'simple_form' is active.
+  - rule: interuption help
+    condition:
+      - active_loop: simple_form
+    steps:
+    - intent: help
+    - action: utter_help  # The bot will respond with the 'utter_help' response.
+    - action: simple_form
+    - active_loop: simple_form  # The form continues after the help message.
+
+  # This rule defines the bot's behavior when the user refuses or negates while the 'simple_form' is active.
+  - rule: skip help
+    condition:
+      - active_loop: simple_form
+    steps:
+    - intent: negation
+    - action: action_skip  # The bot performs the 'action_skip' action.
+    - action: simple_form
+    - active_loop: simple_form  # The form continues after handling the negation.

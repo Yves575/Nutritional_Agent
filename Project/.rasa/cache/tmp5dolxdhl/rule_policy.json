@@ -1,0 +1,21 @@
+{
+  "lookup": {
+    "rules": {},
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "handling active loops and forms - form_get_food - action_listen",
+      "handling active loops and forms - form_get_allergen",
+      "predicting default action with intent back",
+      "predicting default action with intent session_start",
+      "handling active loops and forms - form_get_allergen - action_listen",
+      "handling active loops and forms - form_get_age - action_listen",
+      "handling active loops and forms - form_get_gender",
+      "predicting default action with intent restart",
+      "handling active loops and forms - form_get_food",
+      "handling active loops and forms - form_get_gender - action_listen",
+      "handling active loops and forms - form_get_age"
+    ]
+  }
+}

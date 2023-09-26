@@ -1,0 +1,272 @@
+# This file defines the configuration for a Rasa chatbot.
+
+# Define the Rasa Core version.
+version: '3.1'
+
+# Intents list all the possible intentions of user messages the bot is trained on.
+intents:
+- greet
+- exit
+- get_weight
+- get_age
+- get_gender
+- get_sport
+- get_height
+- get_habits
+- get_mealtype
+- get_disliked
+- get_allergen
+- help
+- negation
+
+# Entities list all the possible data items that the bot can extract from user messages.
+entities:
+- weight
+- age
+- gender
+- sport
+- height
+- habits
+- mealtype
+- disliked
+- allergen
+
+# Slots are used to store and manage specific information from user messages or the bot's knowledge.
+slots:
+  weight:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: weight
+      conditions:
+      - active_loop: simple_form
+        requested_slot: weight
+
+  age:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: age
+      conditions:
+      - active_loop: simple_form
+        requested_slot: age
+
+  gender:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: gender
+      conditions:
+      - active_loop: simple_form
+        requested_slot: gender
+
+  sport:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: sport
+      conditions:
+      - active_loop: simple_form
+        requested_slot: sport
+
+  height:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: height
+      conditions:
+      - active_loop: simple_form
+        requested_slot: height
+
+  habits:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: habits
+      conditions:
+      - active_loop: simple_form
+        requested_slot: habits
+
+  mealtype:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: mealtype
+      conditions:
+      - active_loop: simple_form
+        requested_slot: mealtype
+
+  disliked:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: disliked
+      conditions:
+      - active_loop: simple_form
+        requested_slot: disliked
+
+  allergen:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: allergen
+      conditions:
+      - active_loop: simple_form
+        requested_slot: allergen
+
+# Forms manage structured interactions, where the bot needs to gather multiple pieces of information from the user.
+forms:
+  simple_form:
+    required_slots:
+    - age
+    - gender
+    - weight
+    - height
+    - sport
+    - mealtype
+    - allergen
+    - habits
+    - disliked
+
+
+# Responses define what the bot will say back to the user in various scenarios.
+# Note that not every responses are used (e.g. utter_happy) but maybe be useful later
+responses:
+  utter_greet:
+  - text: Hello! How can I assist you with your nutrition today?
+  - text: Hi there! Ready to make some nutritious decisions today?
+  - text: Greetings! How can I help improve your diet today?
+  - text: Hey! Let's work together on your nutrition today, shall we?
+  - text: Welcome back! How can we enhance your nutrition today?
+  - text: Good to see you! What can I do for you in the world of nutrition today?
+  utter_exit:
+  - text: Goodbye! Stay healthy and eat well!
+  - text: Farewell! Remember, good nutrition is key to good health!
+  - text: Take care! Don't forget to eat your fruits and veggies!
+  - text: Bye for now! Remember to maintain a balanced diet!
+  - text: See you later! Keep making healthy food choices!
+  - text: Bye! Enjoy your next meal, make it nutritious!
+  utter_create_recipe:
+  - text: We created a recipe!
+  - text: A new recipe has been crafted just for you!
+  - text: Voila! Your personalized recipe is ready.
+  - text: Great news! We have put together a recipe for you.
+  - text: Your custom recipe is ready. Enjoy!
+  - text: We've come up with a delicious and nutritious recipe for you!
+  utter_thanks_for_food:
+  - text: Thank you for providing your food preferences!
+  utter_happy:
+  - text: "Great, thank you !"
+  utter_help:
+  - text: "Ok here your help:"
+
+  utter_ask_age:
+  - text: Can you please tell me your age?
+  - text: What is your age?
+  - text: Could you share your age, please?
+  - text: May I know your age?
+  - text: If you don't mind, could you tell me your age?
+  - text: Would you be comfortable sharing your age?
+  - text: I'd like to know your age, if that's okay?
+  - text: Can I ask how old you are?
+  - text: Do you mind telling me how old you are?
+  - text: If it's not too personal, could you tell me your age?
+
+  utter_ask_gender:
+  - text: What is your gender?
+  - text: Could you tell me your gender, please?
+  - text: Can I ask what gender you identify as?
+  - text: May I know your gender?
+  - text: Do you identify as male pr female?
+  - text: Could you share your gender identity with me?
+
+  utter_ask_allergen:
+  - text: Do you have any allergies to gluten, dairy, milk, or shellfish?
+  - text: Can you tell me if you're allergic to any of these ? gluten, dairy, milk, or shellfish?
+  - text: Are you allergic to gluten, dairy, milk, or shellfish?
+  - text: I'd like to know if you have any allergies. Are you allergic to gluten, dairy, milk, or shellfish?
+  - text: It's important for us to know about any potential food allergies. Do you have allergies to gluten, dairy, milk, or shellfish?
+  - text: Can you confirm if you have any allergies to gluten, dairy, milk, or shellfish?
+  - text: To ensure we accommodate your dietary needs, could you tell me if you're allergic to gluten, dairy, milk, or shellfish?
+  - text: For your safety, could you inform me if you have any allergies to gluten, dairy, milk, or shellfish?
+  - text: What is your allergen profile? Do you have any allergies to gluten, dairy, milk, or shellfish?
+  - text: How would you rate your allergen sensitivity to gluten, dairy, milk, and shellfish?
+
+
+  utter_ask_weight:
+  - text: Could you tell me your current weight?
+  - text: How much do you weigh?
+  - text: Could you please share your weight with me?
+  - text: Can you provide your weight?
+  - text: I would need to know your weight, could you provide that?
+  - text: For accuracy, could you tell me your weight?
+  - text: Would you mind sharing your weight with me?
+  - text: What's your weight at the moment?
+  - text: It would be helpful to know your weight. Could you share that information with me?
+  - text: I need your weight to proceed. Could you provide that?
+
+  utter_ask_sport:
+  - text: Could you tell me if you're highly active, active, or sedentary?
+  - text: Would you consider your regular activity level to be highly active, active, or sedentary?
+  - text: Can you describe your physical activity? Is it highly active, active, or more sedentary?
+  - text: How would you categorize your lifestyle as highly active, active, or sedentary?
+  - text: Do you lead a highly active lifestyle, an active lifestyle, or would you say you're more sedentary?
+  - text: I'd like to understand your physical activity level. Is it highly active, active, or sedentary?
+  - text: Can you describe your daily activity level? Would you say it's highly active, active, or sedentary?
+  - text: When considering your physical activity, would you say you're highly active, active, or sedentary?
+  - text: What is your usual level of physical activity? Would you say it's highly active, active, or sedentary?
+  - text: How would you rate your level of physical activity on a scale of highly active, active, to sedentary?
+
+
+  utter_ask_height:
+  - text: Could you tell me how tall you are?
+  - text: I need to know your height. Could you tell me?
+  - text: Can you please share your height with me?
+  - text: How tall are you?
+  - text: Could you please provide your height?
+  - text: Can you tell me your height in cm or m?
+  - text: What's your height?
+  - text: I need to know your height for better recommendations.
+  - text: Please provide your height.
+  - text: It would be helpful to know your height.
+
+  utter_ask_habits:
+  - text: Do you follow any specific dietary habits such as vegan, halal, or kosher?
+  - text: Could you tell me about your dietary preferences? Are you vegan, or do you follow a halal or kosher diet?
+  - text: I'd like to know more about your eating habits. Do you follow any specific diet like vegan, halal, or kosher?
+  - text: Do you have any dietary restrictions or preferences? For instance, are you vegan, or do you adhere to a halal or kosher diet?
+  - text: Can you please tell me about your dietary habits? For example, are you vegan, or do you follow a halal or kosher diet?
+
+  utter_ask_mealtype:
+  - text: Are you looking for a recipe for breakfast, lunch, or dinner?
+  - text: Which meal are you planning? Breakfast, lunch, or dinner?
+  - text: What type of meal are you interested in? Breakfast, lunch, or dinner?
+  - text: Is this recipe for breakfast, lunch, or dinner?
+  - text: Could you please specify the meal for which you'd like the recipe? Breakfast, lunch, or dinner?
+
+  utter_ask_disliked:
+  - text: Are there any foods you dislike or prefer to avoid?
+  - text: Are there any ingredients you don't like?
+  - text: Can you tell me if there are any foods you don't enjoy?
+  - text: Is there anything you would rather not have in your meal?
+  - text: Do you have any food dislikes we should know about?
+
+# Actions are custom code snippets that allow the bot to perform specific tasks.
+actions:
+- action_say_data
+- validate_simple_form
+- action_skip
+
+# Session configuration defines how long a user's session with the bot lasts, and how slots are managed between sessions.
+session_config:
+  session_expiration_time: 60  # A session expires after 60 minutes of inactivity.
+  carry_over_slots_to_new_session: true  # Slots values are retained for the next session.

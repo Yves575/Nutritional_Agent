@@ -1,0 +1,304 @@
+# This file provides training data for the Natural Language Understanding (NLU) component of Rasa.
+
+# Define the version of Rasa NLU being used.
+version: "3.1"
+
+# The 'nlu' section includes training examples for intents and entities.
+nlu:
+
+  # An intent represents a type of user message the bot can recognize.
+- intent: greet
+  examples: |
+    - Hi there
+    - Hello, how are you
+    - Good day!
+    - Hey, nice to meet you
+    - Hello, nice to see you again
+    - Hey, how's it going
+    - hello how are you
+
+- intent: exit
+  examples: |
+    - I'm heading out, bye
+    - I need to log off
+    - That's all from me
+    - I'm done for the day
+    - Catch you later
+    - Time to go
+    - Bye for now
+    - See you next time
+    - Time to say goodbye
+    - I'm signing off now
+
+- intent: get_height
+  examples: |
+    - I measure [1.90](height) m
+    - I'm around [170](height) cm tall
+    - I am [1.65](height) meters
+    - My height is [1,80](height)m
+    - I am [172](height) cm
+    - I stand at [1.75](height) meters
+    - My height is around [160](height) cm
+    - I'm exactly [168](height) m tall
+
+- lookup: height
+  examples: |
+    - 1.90
+    - 1.70
+    - 1.65
+    - 1,80
+    - 180
+    - 1.75
+    - 160
+    - 1.68
+
+- intent: get_weight
+  examples: |
+    - I weigh [50](weight) kg
+    - I'm [82](weight) kg
+    - My weight is nearly [95](weight) kilograms
+    - I weigh in at about [120](weight) pounds
+    - My weight fluctuates around [70](weight) kg
+    - I'm currently [68](weight) kg
+    - I weigh about [55](weight) kilograms
+    - I'm exactly [100](weight) pounds
+
+- lookup: weight
+  examples: |
+    - 50
+    - 82
+    - 95
+    - 120
+    - 70
+    - 68
+    - 55
+    - 100
+
+
+- intent: get_age
+  examples: |
+    - yes i am [22](age) year old
+    - I am [32](age) years old
+    - I'm turning [46](age) this year
+    - I'm in my [50](age)
+    - I celebrated my [21](age) birthday recently
+    - [9](age)
+    - yes my age is (57)(age)
+
+- lookup: age
+  examples: |
+    - 32
+    - 46
+    - 50
+    - 21
+
+- intent: get_gender
+  examples: |
+    - I am a [guy](gender)
+    - I am a [girl](gender)
+    - I identify as [male](gender)
+    - I identify as [female](gender)
+
+- lookup: gender
+  examples: |
+    - guy
+    - girl
+    - male
+    - female
+    - boy
+    - lady
+    - man
+    - woman
+    - gentleman
+    - madam
+    - non-binary
+    - trans male
+    - trans female
+    - genderqueer
+    - genderfluid
+    - cisgender male
+    - cisgender female
+    - two-spirit
+    - agender
+
+- intent: get_sport
+  examples: |
+    - I'm [very active](sport)
+    - I do [highly active](sport)
+    - I exercise daily, so I would say I'm [very active](sport)
+    - I hardly exercise, I'm [not active](sport)
+
+- lookup: sport
+  examples: |
+    - very active
+    - highly active
+    - not active
+    - fairly active
+    - lightly active
+
+- intent: get_habits
+  examples: |
+    - I am a [halal](habits) eater
+    - I follow a [Mediterranean](habits) diet
+    - I stick to a [low-carb](habits) diet
+    - I'm on a [high-protein](habits) diet
+    - I'm [vegan](habits)
+    - I eat [gluten-free](habits) food
+    - I follow a [paleo](habits) diet
+    - I am a [vegetarian](habits)
+    - I adhere to a [keto](habits) lifestyle
+
+- lookup: habits
+  examples: |
+    - halal
+    - Mediterranean
+    - low-carb
+    - high-protein
+    - vegan
+    - vegetarian
+    - paleo
+    - keto
+    - gluten-free
+    - dairy-free
+    - pescatarian
+    - Atkins
+    - South Beach
+    - raw food
+    - organic
+    - Whole30
+    - sugar-free
+    - flexitarian
+    - plant-based
+    - kosher
+
+- intent: get_mealtype
+  examples: |
+    - I'll have a [breakfast](mealtype)
+    - For [lunch](mealtype)
+    - I'm planning a [dinner](mealtype)
+    - I'm in the mood for [lunch](mealtype)
+    - I would like a [breakfast](mealtype)
+
+- intent: get_disliked_food
+  examples: |
+    - No [tomatoes](disliked) for me
+    - I don't want any [anise](disliked)
+    - I don't like [sour](disliked) flavors
+    - No [eggplant](disliked) please
+
+- lookup: disliked
+  examples: |
+    - tomatoes
+    - anise
+    - sour flavors
+    - eggplant
+    - onions
+    - garlic
+    - mustard
+    - turnips
+    - bell peppers
+    - parsley
+    - cilantro
+    - rhubarb
+    - anchovies
+    - sardines
+    - clams
+    - oysters
+    - blue cheese
+    - goat cheese
+    - pickles
+    - radishes
+    - beets
+    - brussels sprouts
+    - cabbage
+    - mushrooms
+    - spinach
+    - bitter tastes
+    - spicy food
+    - broccoli
+    - cauliflower
+    - kale
+    - liver
+    - snails (escargot)
+    - tofu
+    - quinoa
+    - seaweed
+    - licorice
+    - horseradish
+    - asparagus
+    - sauerkraut
+    - lamb
+    - venison
+    - caviar
+    - duck
+    - okra
+    - artichokes
+
+- intent: get_allergen
+  examples: |
+    - I have a [gluten](allergen) allergy
+    - I'm allergic to [dairy](allergen)
+    - I can't eat [milk](allergen)
+    - I'm allergic to [shellfish](allergen)
+
+- lookup: allergen
+  examples: |
+    - Brussels Sprouts
+    - Liver
+    - Anchovies
+    - Olives
+    - Blue Cheese
+    - Okra
+    - Beets
+    - Tofu
+    - Cilantro
+    - Oysters
+    - Durian
+    - Tripe
+    - Kale
+    - Eggplant
+    - Sardines
+    - Sauerkraut
+    - Licorice
+    - Marmite
+    - Vegemite
+    - Artichokes
+    - Lima Beans
+    - Cottage Cheese
+    - Grapefruit
+    - Fennel
+    - Seaweed
+    - Escargot
+    - Pickles
+    - Mustard
+    - Wasabi
+    - Horseradish
+    - Capers
+    - Mayonnaise
+    - Vinegar
+    - Ketchup
+    - Hot Sauce
+    - Garlic
+    - Onions
+    - Spinach
+    - Mushrooms
+    - egg
+
+- intent: help
+  examples: |
+    - help
+
+- intent: negation
+  examples: |
+    - No
+    - I don't want
+    - no thanks
+    - I'd rather not
+    - Not interested
+    - No way
+    - Not this time
+    - Not for me
+    - Nope
+    - I'm good, thanks
+    - I don't have
+

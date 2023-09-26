@@ -1,0 +1,29 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_age\"}}]": "validate_form_get_gender",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_age\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_gender\"}}]": "validate_form_get_allergen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_age\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_gender\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_allergen\"}}]": "validate_form_get_food",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_age\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_gender\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_allergen\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_food\"}}]": "action_start",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_age\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_gender\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_allergen\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"validate_form_get_food\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_start\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [
+      "validate_form_get_age"
+    ],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent restart",
+      "handling active loops and forms - validate_form_get_age - action_listen",
+      "predicting default action with intent back",
+      "handling active loops and forms - validate_form_get_gender",
+      "predicting default action with intent session_start",
+      "handling active loops and forms - validate_form_get_food",
+      "handling active loops and forms - validate_form_get_gender - action_listen",
+      "handling active loops and forms - validate_form_get_allergen - action_listen",
+      "handling active loops and forms - validate_form_get_food - action_listen",
+      "handling active loops and forms - validate_form_get_age",
+      "handling active loops and forms - validate_form_get_allergen"
+    ]
+  }
+}
