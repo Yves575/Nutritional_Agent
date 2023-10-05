@@ -54,13 +54,13 @@ nlu:
 
 - intent: get_weight
   examples: |
-    - I weigh [50](weight) kg
+    - I weight [50](weight) kg
     - I'm [82](weight) kg
     - My weight is nearly [95](weight) kilograms
-    - I weigh in at about [120](weight) pounds
+    - I weight in at about [120](weight) pounds
     - My weight fluctuates around [70](weight) kg
     - I'm currently [68](weight) kg
-    - I weigh about [55](weight) kilograms
+    - I weight about [55](weight) kilograms
     - I'm exactly [100](weight) pounds
 
 - lookup: weight
